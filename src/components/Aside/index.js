@@ -3,6 +3,8 @@
 /***************/
 import React, {Component} from "react";
 import "./aside.css";
+import portimg from "../../assets/portimg.jpg";
+
 
 class Aside extends Component {
     constructor(props){
@@ -23,10 +25,13 @@ class Aside extends Component {
         const btnVis = this.state.showHam ? "navbar-btn sidebarCollapse":"navbar-btn sidebarCollapse active";
 
         return(
+            <>
            <div className="wrapper">
                 <nav className={menuVis}>
                     <div className="sidebar-header">
-                        <h3>Collapsible Sidebar</h3>
+                        <img className="author-img"  src={portimg} alt="Portfolio image"/>
+                        <h1 className=""><a href="index.html">Tinus Strydom</a></h1>
+                        <span className=""><a href="#">Aspiring Software Engineer</a> in Cape Town, South Africa</span>
                     </div>
                     <ul className="list-unstyled components">
                         <li className="active"><a href="#">Home</a></li>
@@ -43,6 +48,7 @@ class Aside extends Component {
                     </button>
                 </div>
             </div>
+            </>
         );
     }
 }
