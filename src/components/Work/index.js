@@ -1,12 +1,12 @@
-/***************/
-/*** CONTACT ***/
-/***************/
+/**************/
+/***  WORK  ***/
+/**************/
 import React from 'react';
 
 function About() {
     return(
         <div className="about-section">
-            <h1>Contact</h1>
+            <h1>Work</h1>
         </div>
     )
 }

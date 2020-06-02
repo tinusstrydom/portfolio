@@ -1,57 +1,69 @@
 /***************/
 /***  ASIDE  ***/
 /***************/
-import React, {Component} from "react";
-import "./aside.css";
-import portimg from "../../assets/portimg.jpg";
-
+import React, {Component} from 'react';
+import './aside.css';
+import Home from '../../components/Home';
+import About from '../../components/About';
+import Skills from '../../components/Skills';
+import Experience from '../../components/Experience';
+import Work from '../../components/Work';
+import Contact from '../../components/Contact';
+import portimg from '../../assets/portimg.jpg';
+import { FaLinkedin, FaGithubSquare} from 'react-icons/fa';
+import {NavLink} from 'react-router-dom';
 
 class Aside extends Component {
     constructor(props){
         super(props);
         this.state = {
             showMenu: false,
-            showHam: false,
+            showBtn: false,
         };
     }
-    
-    ToggleMenu = () => {
+    toggleMenu = () => {
         this.setState({showMenu: !this.state.showMenu,
-                       showHam: !this.state.showHam});
+                      showBtn: !this.state.showBtn});
     }
-    
-    render(){
-        const menuVis = this.state.showMenu ? "sidebar":"sidebar active";
-        const btnVis = this.state.showHam ? "navbar-btn sidebarCollapse":"navbar-btn sidebarCollapse active";
 
+    render(){
+        const menuToggle = this.state.showMenu ? "sidebar toggled":"sidebar";
+        const btnToggle = this.state.showBtn ? "sidebarBtn toggled": "sidebarBtn";
+        const year = new Date().getFullYear();
         return(
-            <>
-           <div className="wrapper">
-                <nav className={menuVis}>
+            <div className="wrapper">
+                <aside className={menuToggle}>
                     <div className="sidebar-header">
-                        <img className="author-img"  src={portimg} alt="Portfolio image"/>
-                        <h1 className=""><a href="index.html">Tinus Strydom</a></h1>
-                        <span className=""><a href="#">Aspiring Software Engineer</a> in Cape Town, South Africa</span>
+                        <img className="sidebar-author-img"  src={portimg} alt="Portfolio image"/>
+                        <h1 className="sidebar-author-name">Tinus Strydom</h1>
+                        <span className="sidebar-author-position"><a href="#">Sofware Engineer</a> in Cape Town</span>
                     </div>
-                    <ul className="list-unstyled components">
-                        <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div id="content">
-                    <button type="button" className={btnVis} onClick={this.ToggleMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+                    <div className="sidebar-nav">
+                        <ul>
+                            <li><NavLink exact to="/" activeClassName="current">Home</NavLink></li>
+                            <li><NavLink exact to="/About" activeClassName="current">About</NavLink></li>
+                            <li><NavLink exact to="/Skills" activeClassName="current">Skills</NavLink></li>
+                            <li><NavLink exact to="/Experience" activeClassName="current">Experience</NavLink></li>
+                            <li><NavLink exact to="/Work" activeClassName="current">Work</NavLink></li>
+                            <li><NavLink exact to="/Contact" activeClassName="current">Contact</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="sidebar-footer">
+                      	<ul>
+                      		<li><a href="#"><FaLinkedin/></a></li>
+                      		<li><a href="#"><FaGithubSquare/></a></li>
+                      	</ul>
+                        <p><small>Copyright &copy; {year}</small></p>
+                    </div>
+                </aside>
+                <button type="button" className={btnToggle} onClick={this.toggleMenu} >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            </>
         );
     }
 }
 
 export default Aside;
-    
