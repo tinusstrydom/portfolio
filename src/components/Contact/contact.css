@@ -1,0 +1,36 @@
+.contact-section{
+    padding: 80px;
+    background:  #640088;
+    color: #fff;
+}
+.contact-left{
+    float: left;
+}
+.contact-left button{
+    background-color: #009fc3 !important;
+}
+.contact-right{
+    float: right;
+}
+.contact-rigth p{
+    margin-top: 25px;
+}
+.contact-right span{
+    padding-right: 20px;
+}
+.contact-right svg{
+    width: 2em;
+    height: 2em;
+    color: #009fc3;
+}
+.contact-right a{
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+.contact-right a:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}

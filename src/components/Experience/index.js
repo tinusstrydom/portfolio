@@ -2,11 +2,13 @@
 /***  EXPERIENCE  ***/
 /********************/
 import React from 'react';
+import './experience.css';
 
 function Experience() {
     return(
-        <div className="experience-section">
-            <h1>Experience</h1>
+        <div className="container-fluid experience-section">
+            <h6>EXPERIENCE</h6>
+            <h1>WORK EXPERIENCE</h1>
         </div>
     )
 }

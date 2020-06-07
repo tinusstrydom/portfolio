@@ -1,3 +1,30 @@
 .navbar{
-    background-color: #53668e;
+    background-color: #373737;
+}
+.nav-item{
+    width: 90px;
+    text-align: center;
+}
+.nav-item a{
+    color: #fff !important;
+    margin: 0;
+    border-left: 1px solid #fff;
+}
+.nav-item a:hover, .nav-item a.home-link{
+    background-color: #009fc3 !important;
+}
+.nav-item:nth-child(2) a:hover, .nav-item a.about-link{
+    background-color: #f80675 !important;
+}
+.nav-item:nth-child(3) a:hover, .nav-item a.skills-link{
+    background-color: #fe7434 !important;
+}
+.nav-item:nth-child(4) a:hover, .nav-item a.experience-link{
+    background-color: #d90032 !important;
+}
+.nav-item:nth-child(5) a:hover, .nav-item a.work-link{
+    background-color: #1929b7 !important;
+}
+.nav-item:nth-child(6) a:hover, .nav-item a.contact-link{
+    background-color: #640088 !important;
 }

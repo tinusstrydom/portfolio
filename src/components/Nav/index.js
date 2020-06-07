@@ -22,22 +22,22 @@ class Navigation extends Component {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/">Home</NavLink>
+                                <NavLink  exact to="/" className="nav-link" activeClassName="home-link">Home</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/About">About</NavLink>
+                                <NavLink exact to="/About" className="nav-link" activeClassName="about-link">About</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/Skills">Skills</NavLink>
+                                <NavLink exact to="/Skills" className="nav-link" activeClassName="skills-link">Skills</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/Experience">Experience</NavLink>
+                                <NavLink exact to="/Experience" className="nav-link" activeClassName="experience-link">Experience</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/Work">Work</NavLink>
+                                <NavLink exact to="/Work" className="nav-link" activeClassName="work-link">Work</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+                                <NavLink exact to="/Contact" className="nav-link" activeClassName="contact-link">Contact</NavLink>
                             </li>
                         </ul>
                     </div>

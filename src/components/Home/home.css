@@ -9,3 +9,38 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.carousel-caption{
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    -webkit-animation: shrink 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: shrink 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes shrink {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}

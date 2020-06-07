@@ -5,9 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antiali000ased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #cac2cf;
+  background-color: #000;
 }
 
 code {

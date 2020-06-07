@@ -1,3 +1,6 @@
 .about-section{
-    background-color: red !important;
+    padding: 80px;
+    background-color: #f80675;
+    height: 100vh;
+    color: #fff;
 }

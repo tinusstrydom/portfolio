@@ -27,8 +27,8 @@ class Aside extends Component {
     }
 
     render(){
-        const menuToggle = this.state.showMenu ? "sidebar toggled":"sidebar";
-        const btnToggle = this.state.showBtn ? "sidebarBtn toggled": "sidebarBtn";
+        const menuToggle = this.state.showMenu ? "sidebar":"sidebar toggled";
+        const btnToggle = this.state.showBtn ? "sidebarBtn": "sidebarBtn toggled";
         const year = new Date().getFullYear();
         return(
             <div className="wrapper">
@@ -40,18 +40,18 @@ class Aside extends Component {
                     </div>
                     <div className="sidebar-nav">
                         <ul>
-                            <li><NavLink exact to="/" activeClassName="current">Home</NavLink></li>
-                            <li><NavLink exact to="/About" activeClassName="current">About</NavLink></li>
-                            <li><NavLink exact to="/Skills" activeClassName="current">Skills</NavLink></li>
-                            <li><NavLink exact to="/Experience" activeClassName="current">Experience</NavLink></li>
-                            <li><NavLink exact to="/Work" activeClassName="current">Work</NavLink></li>
-                            <li><NavLink exact to="/Contact" activeClassName="current">Contact</NavLink></li>
+                            <li><NavLink exact to="/" activeClassName="home-link">Home</NavLink></li>
+                            <li><NavLink exact to="/About" activeClassName="about-link">About</NavLink></li>
+                            <li><NavLink exact to="/Skills" activeClassName="skills-link">Skills</NavLink></li>
+                            <li><NavLink exact to="/Experience" activeClassName="experience-link">Experience</NavLink></li>
+                            <li><NavLink exact to="/Work" activeClassName="work-link">Work</NavLink></li>
+                            <li><NavLink exact to="/Contact" activeClassName="contact-link">Contact</NavLink></li>
                         </ul>
                     </div>
                     <div className="sidebar-footer">
                       	<ul>
-                      		<li><a href="#"><FaLinkedin/></a></li>
-                      		<li><a href="#"><FaGithubSquare/></a></li>
+                      		<li><a href="https://www.linkedin.com/in/tinus-strydom/"><FaLinkedin/></a></li>
+                      		<li><a href="https://github.com/tinusstrydom"><FaGithubSquare/></a></li>
                       	</ul>
                         <p><small>Copyright &copy; {year}</small></p>
                     </div>
