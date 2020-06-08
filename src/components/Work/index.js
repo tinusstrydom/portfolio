@@ -8,6 +8,7 @@ import './work.css';
 function Work() {
     return(
         <div className="container-fluid work-section">
+            <div className="container">
             <h6>WORK</h6>
             <h1>MY WORK</h1>
             <ul>
@@ -66,6 +67,7 @@ function Work() {
                     </a>
                 </li>
              </ul>
+        </div>
     </div>
     )
 }

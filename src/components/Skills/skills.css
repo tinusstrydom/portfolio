@@ -1,33 +1,32 @@
 .skills-section{
     padding: 80px;
     background: #fe7434;
-    height: 100vh;
     color: #fff;
 }
 .skill{
     float: left;
-    margin: 20px;
+    padding: 20px;
 }
 
 .skill img{
     width: 100px;
     height: 100px;
     border-radius: 50% 10%;
-    border: 3px solid #373737;
+    border: 3px solid #fff;
     box-shadow: 1px 1px 1px #373737,
        1px 2px 1px #373737,
        1px 3px 1px #373737,
-       1px 4px 1px #373737,
+       1px 4px 1px #fff,
        1px 5px 1px #373737,
        1px 6px 1px #373737,
        1px 7px 1px #373737,
-       1px 8px 1px #373737,
+       1px 8px 1px #fff,
        1px 9px 1px #373737,
        1px 10px 1px #373737,
-   1px 18px 6px rgba(16,16,16,0.4),
-   1px 22px 10px rgba(16,16,16,0.2),
-   1px 25px 35px rgba(16,16,16,0.2),
-   1px 30px 60px rgba(16,16,16,0.4);
+       1px 18px 6px rgba(16,16,16,0.4),
+       1px 22px 10px rgba(16,16,16,0.2),
+       1px 25px 35px rgba(16,16,16,0.2),
+       1px 30px 60px rgba(16,16,16,0.4);
 }
 .skill h3{
     display: inline;
@@ -35,15 +34,31 @@
     text-shadow: 1px 1px 1px #373737,
        1px 2px 1px #373737,
        1px 3px 1px #373737,
-       1px 4px 1px #373737,
+       1px 4px 1px #fff,
        1px 5px 1px #373737,
        1px 6px 1px #373737,
        1px 7px 1px #373737,
-       1px 8px 1px #373737,
+       1px 8px 1px #fff,
        1px 9px 1px #373737,
        1px 10px 1px #373737,
-   1px 18px 6px rgba(16,16,16,0.4),
-   1px 22px 10px rgba(16,16,16,0.2),
-   1px 25px 35px rgba(16,16,16,0.2),
-   1px 30px 60px rgba(16,16,16,0.4);
+       1px 18px 6px rgba(16,16,16,0.4),
+       1px 22px 10px rgba(16,16,16,0.2),
+       1px 25px 35px rgba(16,16,16,0.2),
+       1px 30px 60px rgba(16,16,16,0.4);
+}
+.outer{
+    margin-top: 30px;
+}
+.skill-progress{
+    background-color: #fff;
+    height: 1.5rem !important;
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+}
+.skill-progress-bar{
+    color: #fff !important;
+    background-color: #009fc3;
+    height: 1.5rem !important;
+    border-radius: 5px;
 }
