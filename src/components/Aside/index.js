@@ -3,12 +3,6 @@
 /***************/
 import React, {Component} from 'react';
 import './aside.css';
-import Home from '../../components/Home';
-import About from '../../components/About';
-import Skills from '../../components/Skills';
-import Experience from '../../components/Experience';
-import Work from '../../components/Work';
-import Contact from '../../components/Contact';
 import portimg from '../../assets/portimg.jpg';
 import { FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {NavLink} from 'react-router-dom';
@@ -34,9 +28,9 @@ class Aside extends Component {
             <div className="wrapper">
                 <aside className={menuToggle}>
                     <div className="sidebar-header">
-                        <img className="sidebar-author-img"  src={portimg} alt="Portfolio image"/>
+                        <img className="sidebar-author-img"  src={portimg} alt="Tinus Strydom"/>
                         <h1 className="sidebar-author-name">Tinus Strydom</h1>
-                        <span className="sidebar-author-position"><a href="#">Sofware Engineer</a> in Cape Town</span>
+                        <span className="sidebar-author-position">Sofware Engineer in Cape Town</span>
                     </div>
                     <div className="sidebar-nav">
                         <ul>

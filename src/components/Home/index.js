@@ -15,23 +15,29 @@ class Home extends Component {
                 <div className='container-fluid' >
                     <Carousel interval={5000} keyboard={false} pauseOnHover={true}>
                         <Carousel.Item style={{'height':"100vh" }}  >
-                            <img style={{'height':"100vh"}} className="d-block w-100" src={Laptop1}  />
+                            <img style={{'height':"100vh"}} className="d-block w-100" src={Laptop1} alt="Colourful laptop" />
                             <Carousel.Caption>
                                 <h1> Hello, My name is Tinus Strydom</h1>
                                 <h3>I am an aspiring Software Engineer</h3>
                                 <p>Welcome to my Portfolio which shows samples of my work!</p>
-                                <button><a href="#">DOWNLOAD CV</a></button>
+                        
+                                <button t
+                                ype="button" className="btn"><a href="#">DOWNLOAD CV</a></button>
                             </Carousel.Caption>
                         </Carousel.Item  >
                         <Carousel.Item style={{'height':"600px"}}>
                             <img style={{'height':"600px"}} className="d-block w-100" src={Laptop2}    />
                             <Carousel.Caption>
-                                <h1>View On Linkedin</h1>
-                                <p>For more info of me</p>
-                                <button><a href="#"><FaLinkedin/> Linkedin</a></button>
-                                <h1>View Git Hub repositories</h1>
-                                <p>For more info of my work</p>
-                                <button><a href="#"><FaGithubSquare/> Github</a></button>
+                                <div className="top">
+                                    <h1>View On Linkedin</h1>
+                                    <p>For more info of me</p>
+                                    <button type="button" className="btn"><a href="https://www.linkedin.com/in/tinus-strydom/"><FaLinkedin/> Linkedin</a></button>
+                                </div>
+                                <div className="bottom">
+                                    <h1>View Git Hub repositories</h1>
+                                    <p>For more info of my work</p>
+                                    <button type="button" className="btn"><a href="https://github.com/tinusstrydom"><FaGithubSquare/> Github</a></button>
+                                </div>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>

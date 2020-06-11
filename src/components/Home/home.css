@@ -17,7 +17,9 @@
     -webkit-animation: shrink 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: shrink 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-
+.carousel-caption .top{
+  margin-bottom: 50px;
+}
 @-webkit-keyframes shrink {
   0% {
     letter-spacing: 1em;
@@ -43,4 +45,12 @@
     letter-spacing: normal;
     opacity: 1;
   }
+}
+
+.btn{
+  background-color:#009fc3;
+}
+.btn a{
+  text-decoration: none;
+  color: #fff;
 }

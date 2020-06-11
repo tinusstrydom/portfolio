@@ -1,14 +1,11 @@
 /********************/
 /***  NAVIGATION  ***/
 /********************/
-import $ from 'jquery';
-import Popper from 'popper.js';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/js/src/collapse.js';
 import React, {Component} from 'react';
 import './nav.css';
-import portimg from '../../assets/portimg.jpg';
-import { FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {NavLink} from 'react-router-dom';
 
 class Navigation extends Component {
