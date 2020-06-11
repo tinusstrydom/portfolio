@@ -17,7 +17,7 @@ function Experience() {
                         </div>
                         <div className="col-6">
                             <h4>Loans-Inc/Mr CashLoans</h4>
-                            <h6>Manager & Owner</h6>
+                            <h6>Manager & Part Owner</h6>
                             <p>2014-Present</p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ function Experience() {
                     <div className="row align-items-center justify-content-end how-it-works">
                         <div className="col-6 text-right">
                             <h4>Picoti Financial Solutions</h4>
-                            <h6>Manager & Owner</h6>
+                            <h6>Manager & Part Owner</h6>
                             <p>2003-2014</p>
                         </div>
                         <div className="col-2 text-center full">
